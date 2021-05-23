@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+.custom-container {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+  align-items: center;
+}
+.section-title {
+  color: #fff;
+  font-size: 5rem;
+  font-weight: 500;
+}
+/* Home-page */
+#home{
+  background-color: #112d32;
+}
+#home .home-effect1,
+#home .home-effect2 {
+  position: relative;
+}
+#home #svg-top {
+  position: absolute;
+  filter: url(#glow);
+}
+#home #svg-bottom {
+  position: absolute;
+  transform: rotate(180deg);
+  filter: url(#glow);
+}
+#home .line1 {
+  stroke: #fff;
+  stroke-width: 3;
+  animation: flicker 6s linear infinite;
+}
+#home .line2 {
+  stroke: #fff;
+  stroke-width: 2;
+  animation: flicker 5s linear infinite;
+  animation-delay: 2s;
+}
+#home .polygon {
+  stroke: #fff;
+  stroke-width: 1.5;
+  fill: none;
+  animation: flicker 5s linear infinite;
+}
+/* End-of-home-page-01 */
+
+/* Keyframes */
+@keyframes flicker {
+  from {
+    opacity: 1;
+  }
+
+  4% {
+    opacity: .9;
+  }
+
+  6% {
+    opacity: .85;
+  }
+
+  8% {
+    opacity: .95;
+  }
+
+  10% {
+    opacity: .90;
+  }
+
+  11% {
+    opacity: .922;
+  }
+
+  12% {
+    opacity: .9;
+  }
+
+  14% {
+    opacity: .95;
+  }
+
+  16% {
+    opacity: .98;
+  }
+
+  17% {
+    opacity: .9;
+  }
+
+  19% {
+    opacity: .93;
+  }
+
+  20% {
+    opacity: .99;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  26% {
+    opacity: .94;
+  }
+
+  28% {
+    opacity: .98;
+  }
+
+  37% {
+    opacity: .93;
+  }
+
+  38% {
+    opacity: .5;
+  }
+
+  39% {
+    opacity: .96;
+  }
+
+  42% {
+    opacity: 1;
+  }
+
+  44% {
+    opacity: .97;
+  }
+
+  46% {
+    opacity: .94;
+  }
+
+  56% {
+    opacity: .9;
+  }
+
+  58% {
+    opacity: .9;
+  }
+
+  60% {
+    opacity: .99;
+  }
+
+  68% {
+    opacity: 1;
+  }
+
+  70% {
+    opacity: .9;
+  }
+
+  72% {
+    opacity: .95;
+  }
+
+  93% {
+    opacity: .93;
+  }
+
+  95% {
+    opacity: .95;
+  }
+
+  97% {
+    opacity: .93;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+/* End-of-keyframes */
